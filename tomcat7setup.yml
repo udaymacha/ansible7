@@ -2,5 +2,5 @@
 - hosts: webservers
   become: yes
   roles:
-    - {role: mytom7installrole, when: ansible_os_family=="RedHat"}
+    - {role: mytomcatinstallrole, when: ansible_os_family=="RedHat"}
     - {role: tom7deployrole, when: ansible_os_family=="RedHat"}
